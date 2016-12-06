@@ -1,0 +1,1 @@
+var patt = new RegExp('ab+c', 'i');

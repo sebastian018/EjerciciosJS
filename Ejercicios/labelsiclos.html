@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <title>LabelsCiclos</title>
+<style type="text/css">
+body {background-color:white; font-family: sans-serif;}
+.boton{padding:15px; width: 200px;  text-align:center; clear:both;
+color: white; border-radius: 40px; background: rgb(202, 60, 60);}
+</style>
+<script type="text/javascript">
+function ejemploBuclesConContinue() {
+var contador = 0;
+var msg = 'Bucle do con ejemplo de continue: \n';
+do {
+if (contador>5 && contador < 12) {contador +=1; continue;}
+msg = msg + '\t Contando... '+ (contador+1) + '\n';
+//Otras instrucciones aquí...
+contador +=1;
+} while (contador < 20);
+msg = msg + 'Bucles etiquetados y uso de continue referenciado: \n'
+bucleExterior: for(var i=0; i<2; i++) {
+                bucleInterior: for (var j=0; j<5; j++){
+                comprobarSijvale2: if (j==2) {continue bucleExterior;}
+                msg = msg + 'i vale ' + i + ', j vale ' + j + ', i*j =  ' + (i*j) +'\n';
+                }
+}
+msg = msg + 'Bucles sin etiquetar y continue sin referenciar: \n'
+bucleExterior: for(var i=0; i<2; i++) {
+                bucleInterior: for (var j=0; j<5; j++){
+                if (j==2) {continue;}
+                msg = msg + 'i vale ' + i + ', j vale ' + j + ', i*j =  ' + (i*j) +'\n';
+                }
+}
+alert (msg);
+}
+</script>
+</head>
+<body>
+<h1>LABELS PARA CICLOS</h1>
+<h3 class="boton" onclick="ejemploBuclesConContinue()">Pulsa aquí</h3>
+</body>
+</html>
