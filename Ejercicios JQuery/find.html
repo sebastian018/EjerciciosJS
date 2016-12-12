@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="find.js"></script>
+<style>
+    .ancestors * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+</head>
+<body class="ancestors">body (great-grandparent)
+<h1>FIND</h1>
+  <div style="width:500px;">div (grandparent)
+    <ul>ul (direct parent)  
+      <li>li (child)
+        <span>span (grandchild)</span>
+      </li>
+    </ul>   
+  </div>
+</body>
+</html>

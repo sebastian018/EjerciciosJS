@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Next</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="next.js"></script>
+	<style type="text/css">
+		.siblings * { 
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+           }
+	</style>
+</head>
+<body>
+<h1>NEXT</h1>
+<div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li>li (sibling)</li>
+    <li>li (sibling)</li>
+    <li class="start">li (sibling with class name "start")</li>
+    <li>li (the next sibling of li with class name "start")</li>
+    <li>li (sibling)</li>
+  </ul>   
+</div>
+
+</body>
+</html>

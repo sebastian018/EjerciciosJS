@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Siblings</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="find.js"></script>
+<style>
+    .siblings  * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+    </style>
+</head>
+<body>
+<h1>SIBLINGS</h1>
+<div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li>li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li id="start">li (sibling)</li>
+    <li>li (the next sibling of "start")</li>
+    <li>li (the next sibling of "start")</li>
+  </ul>   
+</div>
+</body>
+</html>
