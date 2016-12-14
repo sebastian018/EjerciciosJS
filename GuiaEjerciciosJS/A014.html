@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A014</title>
+	<script type="text/javascript">
+		function calcular(){
+               var num = document.getElementById('num').value
+                var suma = 0;
+               if(num == 0){
+                  alert("Digite un numero diferente de cero (0)");
+               } else{
+               	  for (var i = 0; i <= num; i++) {
+               	  	  suma = suma + i;
+               	  }
+               	  alert("La suma de los numero es: " + suma);
+               }
+		};
+	</script>
+</head>
+<body>
+<div>
+	<p>Ingresar un numero diferente de cero (0)</p>
+	<input type="number" name="numero" id="num">
+	<button onclick="calcular()">Calcular</button>
+</div>
+</body>
+</html>

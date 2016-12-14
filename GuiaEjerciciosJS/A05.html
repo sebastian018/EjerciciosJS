@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A05</title>
+</head>
+<body>
+<script type="text/javascript">
+	function result(){
+		
+	var a=[15,170]
+
+	var b=[16,166]
+
+	var c=[17,175]
+
+	var d=[18,160]
+
+	var e=[19,178]
+     var estatura=document.getElementById('estatura').value
+	if (estatura=="a")
+	{
+
+		
+		alert("Los alumnos que miden mas de 175 tienen --->(años,estatura): "+c+" y "+e)
+	}
+	else if (estatura=="b")
+	{
+	
+		alert("Los alumnos que son mayores de 18 años  --->(años,estatura): "+d+" y "+e )
+	}
+	else if (estatura=="c")
+	{
+		
+		alert("Los datos de los alumnos --->(años,estatura): "+a+" y "+b+" y "+c+" y "+d+" y "+e)
+	}
+	};
+
+</script>
+
+<style type="text/css">
+	li{
+		color: #00FFAA;
+	}
+
+	p{
+		color: #00FF48;
+	}
+</style>
+<ul>
+	<li>Escriba "a" si quiere ver los datos de los alumnos que midan mas de 1.75m</li>
+	<li>Escriba "b" si quiere ver los datos de los alumnos que tienen una edad mayor a 18</li>
+	<li>Escriba "c" si quiere ver todos los datos de los alumnos</li>
+</ul>
+<p> Escriba la edad o estatura requerida:
+<input type="text" id="estatura">
+</p>
+<button onclick="result()">Ver</button>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A010</title>
+	<script type="text/javascript">
+		function saber(){
+			var dia = document.getElementById('dia').value
+			var mes = document.getElementById('mes').value
+			var año = document.getElementById('año').value
+
+			if(dia == 29 && mes == 2){
+				alert("Fecha correcta");
+			} else if(dia == 30 && mes == 4){
+			      alert("Fecha correcta");        
+			} else if(dia == 30 && mes == 6){
+                  alert("Fecha correcta");
+			} else if(dia == 30 && mes == 9){
+                  alert("Fecha correcta");
+			} else if(dia == 30 && mes == 11){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 1){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 3){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 5){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 7){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 8){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 10){
+                  alert("Fecha correcta");
+			} else if(dia == 31 && mes == 12){
+                  alert("Fecha correcta");
+			} else{
+				alert("Fecha incorrecta");
+			}
+		};
+	</script>
+	<style type="text/css">
+		div{
+			background-color: aqua;
+			margin-left: 30px;
+			margin-right: 1100px;
+		}
+
+		button{
+			background-color: blue;
+            color: black;
+		}
+	</style>
+</head>
+<body>
+<div>
+<p>Dia</p>
+<input type="number" name="Dia" id="dia">
+<p>Mes</p>
+<input type="number" name="Mes" id="mes">
+<p>Año</p>
+<input type="number" name="Año" id="año">
+<br>
+<br>
+<button onclick="saber()">Calcular</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A015</title>
+    <script type="text/javascript">
+    	function primo () {
+        var num = document.getElementById('num').value
+        var d=0;
+        var i=1;
+        while(i<=num)
+        {
+             if (num%i==0)
+             {
+               d=d+1;  
+             }
+                
+            i=i+1;
+        }           
+        if(d==2)
+        {
+        alert("El numero  " + num + "  es primo");
+        }
+        else
+        {
+            alert("El numero  " + num + " no es primo");
+        }     
+    }
+    </script>
+</head>
+<body>
+    <p>Ingresar un numero diferente de cero (0)</p>
+	<input type="number" name="numero" id="num">
+	<button onclick="primo()">Calcular</button>
+</body>
+</html>
